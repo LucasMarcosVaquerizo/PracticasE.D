@@ -35,3 +35,4 @@ public class tiempo {
         System.out.println("\n" + resultado.length() + " Concatenaciones, " + tiempoTranscurrido + " Segundos");
     }
 }
+
