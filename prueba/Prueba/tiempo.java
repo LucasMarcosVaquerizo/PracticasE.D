@@ -4,7 +4,7 @@ import time.*;
 
 public class tiempo {
     public static void main(String[] args) {
-        String resultado = "Hola";
+        String resultado = "";
         String concatenacion = "Hola";
         count miObjeto = new count();
 
@@ -24,11 +24,12 @@ public class tiempo {
         System.out.println("Repeticiones: " + contador);
 
         StringBuilder resultado2 = new StringBuilder();
+        resultado2.append(" ");
 
         long tiempoInicial = miObjeto.getSegundos();
-        long tiempoFinal = tiempoInicial + 2;
+        long tiempoFinal = tiempoInicial + 1;
 
-        while (miObjeto.getSegundos() > tiempoFinal) {
+        while (miObjeto.getSegundos() < tiempoFinal) {
             resultado2.append(concatenacion);
         }
         long tiempoTranscurrido = tiempoFinal - tiempoInicial;
