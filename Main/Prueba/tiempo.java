@@ -1,15 +1,15 @@
-package prueba.Prueba;
+package Main.Prueba;
 
-import time.*;
+import Main.Prueba.time.*;
 
 public class tiempo {
     public static void main(String[] args) {
-        String resultado = "";
+        String resultado = " ";
         String concatenacion = "Hola";
         count miObjeto = new count();
 
         long tiempo1 = miObjeto.getSegundos();
-        long tiempo2 = tiempo1 + 2;
+        long tiempo2 = tiempo1 + 8;
 
         int contador = 0;
 
@@ -27,7 +27,7 @@ public class tiempo {
         resultado2.append(" ");
 
         long tiempoInicial = miObjeto.getSegundos();
-        long tiempoFinal = tiempoInicial + 1;
+        long tiempoFinal = tiempoInicial + 8;
 
         while (miObjeto.getSegundos() < tiempoFinal) {
             resultado2.append(concatenacion);
